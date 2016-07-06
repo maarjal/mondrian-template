@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  width: 72%;
+  height: 80%;
+  background-color: darkblue;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 3%;
+}
+
+.asides {
+  height: 100%;
+}
+
+.aside1 {
+  float: right;
+  width: 22%;
+  height: 37%;
+  background-color: tomato;
+  margin-top: 5%;
+  margin-right: 3%;
+}
+
+.aside2 {
+  float: right;
+  height: 37%;
+  width: 22%;
+  background-color: hotpink;
+  margin-top: 3%;
+  margin-right: 3%;
+}
+
+.main {
+  float: left;
+}
+
+@media screen and (max-width: 1100px) {
+  .aside1, .aside2 {
+    float: none;
+    display: inline-block;
+    width: 49.5%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .asides {
+    width: 72%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+  }
+}
+
+@media screen and () {
+
+}
